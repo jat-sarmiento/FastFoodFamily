@@ -1,0 +1,81 @@
+
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;     /*-- Fuente --*/
+    font-size: 1rem;
+    font-weight: 300px;
+    background-color: var(--grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+}
+h6{
+    color: whitesmoke;
+}
+.navbar {
+    min-height: 60px;
+}
+
+#a-hover {
+    color: var(--white);
+}
+
+#a-hover:hover {
+    color: #fa0a0a !important;
+}
+
+.bg-ligth { background-color: var(--light) !important ;}
+.bg-grey { background-color: var(--grey) !important ;}
+.bg-dark { background-color: var(--dark) !important ;}
+
+/*------------------- Contenido #1 ------------------*/
+.container-titulo1 {
+    color: #fafafa;
+    background: url("../img/fondo\ quienes\ somos.jpg") rgba(0, 0, 0, .6);
+    object-fit: cover;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.texto1 {
+    margin: 165px auto;
+    font-size: 50px;
+}
+
+.text-dark { color:var(--dark) !important;}
+
+.text-light { color:var(--light) !important;}
+
+.member-info {
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.texto3 {
+    margin: 100px auto;
+    font-size: 50px;
+}
+
+
+@media (max-width: 576px){
+    .display-4 {
+        font-size: 2.4rem;
+    }
+    h2{
+        color:rgb(231, 46, 231);
+    }
+    .btn {
+        width: 100%;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}

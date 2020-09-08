@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;    
+    font-size: 1rem;
+    font-weight: 300px;
+    background-color: var(--blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+}
+
+.navbar {
+    min-height: 60px;
+}
+
+#a-hover {
+    color: var(--white);
+}
+
+#a-hover:hover {
+    color: #fa0a0a !important;
+}
+
+.bg-ligth { background-color: var(--light) !important ;}
+.bg-grey { background-color: var(--grey) !important ;}
+.bg-dark { background-color: var(--dark) !important ;}
+
+.text-dark { color:var(--grey) !important;}
+
+
+.seccion {
+    padding: 150px 0;
+}
+
+#hero i {
+    font-size: 33px;
+    color: var(--dark);
+}
+
+form {
+    background-color: var(--grey);
+}
+
+.formularioGeneral {
+    border: 3px solid cornflowerblue;
+    border-radius: 5px;
+    box-shadow: -10px 10px 0 0 var(--grey);
+}
+
+.formulario {
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    padding: 33px;
+    margin: auto;
+    background: rgb(241, 129, 0);
+}
+
+
+
+@media (max-width: 600px){
+ 
+    .display-4 {
+        font-size: 2.4rem;
+    }
+    h2{
+        color:rgb(245, 50, 203);
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .w-75 {
+        width: 100% !important;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
