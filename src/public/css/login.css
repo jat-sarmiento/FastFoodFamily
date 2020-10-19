@@ -45,18 +45,6 @@ body{
     padding-top: 4px;
 }
 
-.form-group#user-group-name::before{
-    content: "\f2bb";
-}
-
-.form-group#user-group::before{
-    content: "\f007";
-}
-
-.form-group#contrasena-group::before{
-    content: "\f023";
-}
-
 button {
     width: 60%;
     margin: 5px 0 25px;

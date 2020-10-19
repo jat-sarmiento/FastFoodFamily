@@ -3,7 +3,7 @@ function login(usuario, contraseña){
     
     if (usuario == "admin" && contraseña == "root") {
         alert("Bienvenido administrador");
-        location.href = "../menuUsuario.html";
+        location.href = "usuario.html";
     }
 
     if(usuario == "" && contraseña == ""){
@@ -24,7 +24,7 @@ function login(usuario, contraseña){
     else if (usuario == localStorage.getItem("usuario") && contraseña == localStorage.getItem("contraseña")) { 
         let nombre =  localStorage.getItem("nombreUsuario");
         guardarDatos(usuario, contraseña);
-        location.href = "../menuUsuario.html";
+        location.href = "usuario.html";
     } 
 }
 
