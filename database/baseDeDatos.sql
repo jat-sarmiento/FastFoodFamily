@@ -5,17 +5,16 @@ use fastFoodFamily;
 
 
  create table usuario (
-     idUsuario int (11) not null primary key,
+     id INT(11) NOT NULL PRIMARY KEY,
      -- not null (no datos nulos) primary key (clave primaria)
-     username varchar (20) not null,
-     password varchar (20) not null, 
+    username VARCHAR(16) NOT NULL,
+    password VARCHAR(60) NOT NULL,
      -- contraseña(password)
-     estadoDeInicioDeSesion character(15) not null,
      fechaDeRegistro timestamp not null default current_timestamp 
     -- guardar fecha automaticamente para llenado automatico
  );
 
- alter table usuario modify idUsuario int(11) not null auto_increment, auto_increment=0; 
+ alter table usuario modify id int(11) not null auto_increment, auto_increment=0; 
 -- (modifique tabla)
  
  create table cliente(
@@ -82,7 +81,7 @@ create table comentarios(
      usuario int(11) not null,
      restaurantes int(11) not null,
      fechaDeRegistro timestamp not null default current_timestamp,
-     constraint fk_usuario foreign key (usuario) references usuario (idUsuario)
+     constraint fk_usuario foreign key (usuario) references usuario (id)
 );
 
 alter table comentarios add constraint fk_comentariosCliente foreign key (cliente) references cliente (idCliente);

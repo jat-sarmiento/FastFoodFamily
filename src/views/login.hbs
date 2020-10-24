@@ -22,14 +22,12 @@
                     </div>
                     <form action="/login" method="POST" class="col-12">
                         <div class="form-group" id="user-group">
-                            <input type="text" id="usuario" class="form-control" placeholder="Usuario">
+                            <input type="text" id="usuario" class="form-control" name="username" placeholder="Usuario">
                         </div>
-                    </form>
-                    <form class="col-12">
                         <div class="form-group" id="contrasena-group">
-                            <input type="password" id="contraseña" class="form-control" placeholder="Contraseña">
+                        <input type="password" id="contraseña" class="form-control" name="password" placeholder="Contraseña">
                         </div>
-                        <button id="bienvenida" class="btn btn-primary" onclick="login(usuario.value,contraseña.value)"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+                        <button id="bienvenida" class="btn btn-primary" type="submit"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
                     </form>
                     <div class="col-12 forgot">
                         <a href="/crearUsuario">Crear cuenta</a>
