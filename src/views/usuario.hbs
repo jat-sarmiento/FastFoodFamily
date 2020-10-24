@@ -5,19 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
         <!-- Css Estilo  -->
         <link rel="stylesheet" href="css/usuario.css">
         
-        <!-- Iconos -->
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <title>Usuario</title>
+        
     </head>
-    <body onload="enviarDatos()">
-        <script src="js/enviarDatos.js"></script>
-        <script src="js/cerrarSesion.js"></script>
+    <body onload="enviarDatos()"> 
+    <form action="/usuario"></form>
 
         <div class="d-flex">
             <div id="siderbar-container" class="bg-info">
@@ -27,7 +22,7 @@
                 <div class="menu">
                     <a href="#" class="d-block text-light p-3"><i class="icon ion-md-list-box mr-2 lead"></i> Codigos Qr Generados</a>
                     <a href="#" class="d-block text-light p-3"><i class="icon ion-md-planet mr-2 lead"></i> Recompensas</a>
-                    <a href="index.html" class="d-block text-light p-3"><i class="icon ion-md-apps mr-2 lead"></i> Home</a>
+                    <a href="/" class="d-block text-light p-3"><i class="icon ion-md-apps mr-2 lead"></i> Home</a>
                 </div>
             </div>
             <div class="w-100">
@@ -46,16 +41,7 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <label id="mostrarDato1"></label> 
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        
-                                        <a class="dropdown-item" href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
-                                        <div>
-                                            <a id="user" class="dropdown-item" href="#">Usuario</a>
-                                        </div>
-                                        <div>    
-                                            <a id="localizar" class="dropdown-item" href="#">Localizar teléfono</a>
-                                        </div>    
-                                    </div>    
+
                                 </li>
                             </ul>
                         </div>
@@ -67,7 +53,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <h1 class="font-weight-bold mb-0">Bienvenid@ <label id="mostrarDato2"></label></h1> 
+                                    <h1 class="font-weight-bold mb-0">Bienvenid@ <label> {{user.username}} </label></h1> 
                                     <p class="lead text-muted">Revisa tus ultimas compras y recompensas</p>
                                 </div>
                                 <div class="col-lg-3 d-flex">
@@ -213,12 +199,5 @@
             </div>
         </div>
 
-
-        <script src="js/efectoLoader.js"></script>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>

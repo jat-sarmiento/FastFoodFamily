@@ -7,7 +7,7 @@ use fastFoodFamily;
  create table usuario (
      idUsuario int (11) not null primary key,
      -- not null (no datos nulos) primary key (clave primaria)
-     userName varchar (20) not null,
+     username varchar (20) not null,
      password varchar (20) not null, 
      -- contraseña(password)
      estadoDeInicioDeSesion character(15) not null,

@@ -1,5 +1,5 @@
 body{
-    background: url("../img/fondo\ login\ 1.jpg") no-repeat center center fixed;
+    background: url("/img/fondo\ login\ 1.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -7,6 +7,10 @@ body{
     margin: 0 auto;
     margin-top: 25%;
     padding: 0;
+}
+
+.navbar {
+    min-height: 85px;
 }
 
 .modal-content {
