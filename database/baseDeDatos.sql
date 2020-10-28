@@ -7,7 +7,7 @@ use fastFoodFamily;
  create table usuario (
      id INT(11) NOT NULL PRIMARY KEY,
      -- not null (no datos nulos) primary key (clave primaria)
-    username VARCHAR(16) NOT NULL,
+    username varchar(16) NOT NULL,
     password VARCHAR(60) NOT NULL,
      -- contraseña(password)
      fechaDeRegistro timestamp not null default current_timestamp 

@@ -4,7 +4,7 @@ const { promisify }= require('util'); //libreria llamada util que contiene prome
 const{database}=require("./keys") //exportar la configuracion del keys(archivos)
 const pool=mysql.createPool(database)//conexion directa con los datos de la configuracion keys
 
-pool.getConnection((err,connection)=>{
+pool.getConnection((err,connection)=>{ //verificar si hay conexion de la base de datos
     if(err){
         if(err.code==="PROTOCOL_CONNECTION_LOST"){
             console.error("se cerró la conexion a la base de datos")
@@ -23,7 +23,7 @@ pool.getConnection((err,connection)=>{
 }); //funcion de conexion () =>(funcion flecha)
 
 //promesas del pool y querys
-pool.query=promisify(pool.query) //todas las consultas seran promesas
+pool.query=promisify(pool.query) //todas las consultas seran promesas= "se ejecutan de una manera mas eficaz "
 
 module.exports=pool //exportar para otro archivo toda la configuracion del pool
 

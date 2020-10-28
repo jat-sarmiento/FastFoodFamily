@@ -18,9 +18,9 @@ require("./lib/passport")
 
 //archivos compartidos
 
-app.set("port", process.env.PORT || 8852);
+app.set("port", process.env.PORT || 8852); //configuracion del puerto "cualquier numero de 4cifras"
 app.set('views', path.join(__dirname,"views")); //todo va a ser leido en cualquier navegador por el path.join
-app.engine(".hbs",exphbs({
+app.engine(".hbs",exphbs({ //donde iniciamos la configuracion del .hbs
     defaultLayout:"main",
     layoutsDir:path.join(app.get("views"),"layouts"), //leido y compartido a la vez en los navegadores tanto mensajes como navegación
     partialsDir:path.join(app.get("views"),"partials"),
@@ -30,19 +30,19 @@ app.engine(".hbs",exphbs({
 app.set('view engine', '.hbs'); //configurar vistas
 
 
-//middle wars
+//middle wars (configuración de eventos)
 
 app.use(morgan("dev")) //va a usar las librerias que la este llamando ej app.use(morgan("dev"))
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
-app.use(session({
-    secret: "fastff",
-    resave: false,
-    saveUninitialized: false,
+app.use(bodyParser.urlencoded({extended:false})); //eventos de librerias sean todos a la vez sincronicos urlencoded(todo el cdigo sera leido en todos los eventos)
+app.use(bodyParser.json()); //arreglos json 
+app.use(session({//configuracion especial de mySQL
+    secret: "fastff", //configuracion que podre ver yo si hay algun daño en el programa
+    resave: false, //para poder revisar mis daños
+    saveUninitialized: false, //para poder revisar mis daños
     store: new MySQLStore(database)
 }))
-app.use(flash());
-app.use(passport.initialize());
+app.use(flash());//para guardar los mensajes
+app.use(passport.initialize()); 
 app.use(passport.session());
 
 //variables globales 
