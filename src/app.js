@@ -61,5 +61,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(require("./router/index.router"))
 app.use(require("./router/auth.router"))
 app.use(require("./router/user.router"))
+app.use(require("./router/contactoEmpresarial"))
+app.use(require("./router/quienesSomos"))
 module.exports=app
 
