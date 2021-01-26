@@ -1,5 +1,5 @@
 {
-  "name": "fastfoodfamily",
+  "name": "calculadora",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/jat-sarmiento/FastFoodFamily.git"
   },
-  "author": "Alejandro Sarmiento Mario Echeverria Steven Tapia",
+  "author": "Alejandro Sarmiento",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jat-sarmiento/FastFoodFamily/issues"
